@@ -9,6 +9,9 @@ namespace Kurotori
         [SerializeField]
         public string m_poseData;
 
+        [SerializeField]
+        bool m_reflectsBonesAboveTheHead = false;
+
         Animator m_avatar;
 
         Vector3[] m_bonePositions;
@@ -50,10 +53,18 @@ namespace Kurotori
 
                     if (bone != null)
                     {
-                        if (i != (int)HumanBodyBones.LeftEye && i != (int)HumanBodyBones.RightEye && i != (int)HumanBodyBones.Jaw)
+                        if (m_reflectsBonesAboveTheHead)
                         {
                             bone.position = pos;
                             bone.rotation = rot;
+                        }
+                        else
+                        {
+                            if (i != (int)HumanBodyBones.LeftEye && i != (int)HumanBodyBones.RightEye && i != (int)HumanBodyBones.Jaw)
+                            {
+                                bone.position = pos;
+                                bone.rotation = rot;
+                            }
                         }
                     }
                 }

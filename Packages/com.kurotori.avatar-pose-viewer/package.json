@@ -1,7 +1,7 @@
 {
   "name": "com.kurotori.avatar-pose-viewer",
   "displayName": "Avatar Pose Viewer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reproduce the pose of the avatar captured in a dedicated world.",
   "gitDependencies": {},
   "vpmDependencies": {
