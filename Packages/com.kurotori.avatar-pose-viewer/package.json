@@ -1,0 +1,17 @@
+{
+  "name": "com.kurotori.avatar-pose-viewer",
+  "displayName": "com.kurotori.avatar-pose-viewer",
+  "version": "0.0.1",
+  "description": "Reproduce the pose of the avatar captured in a dedicated world.",
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.base": "3.5.1"
+  },
+  "author": {
+    "name": "kurotori",
+    "email": "kurotori4423@gmail.com"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "type": "tool"
+}
